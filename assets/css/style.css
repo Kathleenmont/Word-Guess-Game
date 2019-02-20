@@ -1,0 +1,77 @@
+html {
+background-color: black;
+color: whitesmoke;
+}
+
+body {
+    position: relative;
+    background-image: url("../images/eeeb9a7523807d37c916ff728a6ff651.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 40px;
+    height: 600px;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    /* font-family: 'Monoton', cursive; */
+    font-size: 70px;
+    text-align: left;
+    padding: 15px;
+    width: 500px;
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    /* font-family: 'Monoton', cursive; */
+    font-size: 40px;
+    text-align: left;
+    padding-top: 0px;
+    padding: 15px;
+    width: 500px;
+}
+
+#instructions {
+    position: relative;
+    background-image: url("../images/15684-illustration-of-a-cartoon-speech-bubble-pv.png");
+    background-size: 200px;
+    transform: rotate(50deg);
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    color: black;
+    left: 670px;
+    bottom: 390px;
+   
+    
+   
+
+}
+#instructions #start-game {
+    /* font-family: 'IM Fell DW Pica', serif; */
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 32px;
+    padding: 45px;
+    padding-left: 55px;
+    padding-top: 30px;
+    text-align: center;
+    transform: rotate(-50deg);
+    position: relative;
+    height: 150px;
+    width: 150px;
+    
+}
+main {
+    position: relative;
+}
+#word-area {
+    font-size: 30px;
+    width: 400px;
+    padding: 10px;
+    margin: 0px;
+    position: relative;
+    /* display: inline-block; */
+    float: right; 
+    bottom: 400px;
+}
+
