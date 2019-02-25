@@ -1,6 +1,7 @@
 html {
 background-color: black;
 color: whitesmoke;
+font-size: 30px;
 }
 
 body {
@@ -10,6 +11,8 @@ body {
     background-position: center;
     padding-top: 40px;
     height: 600px;
+    font-family: 'Patrick Hand SC', cursive;
+    letter-spacing: 2px;
 }
 
 h1 {
@@ -41,7 +44,7 @@ h2 {
     background-repeat: no-repeat;
     color: black;
     left: 670px;
-    bottom: 390px;
+    bottom: 20px;
    
     
    
@@ -51,7 +54,7 @@ h2 {
     /* font-family: 'IM Fell DW Pica', serif; */
     font-family: 'Patrick Hand SC', cursive;
     font-size: 32px;
-    padding: 45px;
+    padding: 50px;
     padding-left: 55px;
     padding-top: 30px;
     text-align: center;
@@ -72,6 +75,10 @@ main {
     position: relative;
     /* display: inline-block; */
     float: right; 
-    bottom: 400px;
+    bottom: 150px;
+}
+
+#wins-losses {
+    font-size: 30px;
 }
 
