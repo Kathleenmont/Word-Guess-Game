@@ -68,17 +68,87 @@ main {
     position: relative;
 }
 #word-area {
-    font-size: 30px;
+    
     width: 400px;
-    padding: 10px;
-    margin: 0px;
+    padding: 20px;
+    margin: 0 auto;
     position: relative;
-    /* display: inline-block; */
     float: right; 
-    bottom: 150px;
+    bottom: 200px;
 }
 
-#wins-losses {
-    font-size: 30px;
+#word-area #wins-losses {
+    color: black;
+    font-size: 25px;
+    background-color: whitesmoke;
+    width: 125px;
+    padding: 15px;
+    border-radius: 10px;
+    left: 10px;
 }
 
+/* media queries */
+@media screen and (max-width: 1150px) {
+    #word-area {
+        position: relative;
+        left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 966px) {
+    #instructions {
+        left: 520px;
+    }
+    #word-area #wins-losses {
+        position: relative;
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    #word-area {
+        position: relative;
+        float: none;
+        margin: 0px 0px 0px -100px;
+        display: block;
+        text-align: left;
+        /* right: -20px; */
+        top: -200px;
+    }
+
+    #word-area #wins-losses {
+        position: relative;
+        right: 30px;
+        margin: 0px 0px 0px -80px;
+    }
+
+    h1 {
+        position: relative;
+        bottom: 200px;
+        width: 400px;
+    }
+
+    h2 {
+        position: relative;
+        bottom: 200px;
+        width: 300px;
+
+    }
+    #instructions {
+        left: 460px;
+    }
+}
+
+@media screen and (max-width: 682px) {
+    #instructions {
+        left: 400px;
+    }
+
+}
+
+@media screen and (max-width: 612px) {
+    #instructions {
+        left: 350px;
+    }
+}
