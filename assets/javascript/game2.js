@@ -2,7 +2,7 @@
 // variable list
 var bowieWord = ['STARDUST', 'SUFFRAGETTE', 'TIME', 'GOLDEN', 'ZIGGY', 'MARS', 'SPIDERS', 'MOONAGE', 'STARMAN', 'DUKE', 'ALADDIN', 'REBEL', 'HEROS', 'CHANGES', 'LAZARUS', 'BLACKSTAR', 'FAME', 'STAR', 'QUICKSAND'];
 // var randomBowieWord;
-var randomBowieWordArray = []; // ["h", "e", "r", "o"]
+var randomBowieWordArray = []; 
 var randomBowieWordArrayBlank = [];
 let userChoice;
 let lettersGuessed = [];
@@ -44,7 +44,7 @@ function startGame() {
 
     // turn selected word into an array
     randomBowieWordArray = Array.from(randomBowieWord);
-    // create new array of underscores
+
     // new array that makes blanks the length of the word
     for (var i = 0; i < randomBowieWordArray.length; i++) {
         randomBowieWordArrayBlank += "_";
@@ -80,6 +80,9 @@ document.onkeyup = function (event) {
     checkIfGuessedAlreadyInWord();
     function checkIfGuessedAlreadyInWord() {
 
+         // alt code for this function
+        // isGuessed = guessesInWord.indexOf(userChoice) !== -1;
+        
         for (var l = 0; l < guessesInWord.length; l++) {
             if (userChoice === guessesInWord[l]) {
                 isGuessed = true;
@@ -87,16 +90,17 @@ document.onkeyup = function (event) {
             } else {
                 isGuessed = false;
             }
-        }
+        } 
     }
-
-
 
 
     // function to see if is already guessed in letters guessed
     checkIfGuessedLettersGuessed();
     function checkIfGuessedLettersGuessed() {
 
+        // alt code for this function
+        // alreadyInWord = lettersGuessed.indexOf(userChoice) !== -1;
+        
         for (var k = 0; k < lettersGuessed.length; k++) {
             if (userChoice === lettersGuessed[k]) {
                 alreadyInWord = true;
@@ -104,7 +108,7 @@ document.onkeyup = function (event) {
             } else {
                 alreadyInWord = false;
             }
-        }
+        }   
     }
 
     // two part function - 1st part to get array of indexes incase letter is a multiple 
@@ -186,18 +190,18 @@ document.onkeyup = function (event) {
                 }
             }
 
+            // if not in word (isInWord is false) run:
+            if (isInWord === false) {
+                lettersGuessed += userChoice;
+                lettersGuessedText.innerHTML += (userChoice);
+                guessesRemaining--;
+                guessesRemainingText.innerHTML = (guessesRemaining);
+            }
+
         }
     }
 
 
-
-    // if not in word (isInWord is false) run:
-    if (isInWord === false) {
-        lettersGuessed += userChoice;
-        lettersGuessedText.innerHTML += (userChoice);
-        guessesRemaining--;
-        guessesRemainingText.innerHTML = (guessesRemaining);
-    }
 
     // reset game if loses
     if (guessesRemaining === 0) {
@@ -214,11 +218,6 @@ document.onkeyup = function (event) {
         startGameText.innerHTML = ("Opps.. Not Quite!")
     }
 }
-
-    // write variabes to page 
-    // lettersGuessedText.innerHTML = ("Incorrect Letters Guessed: " + lettersGuessed);
-    // winsText.innerHTML = ("Wins: /n" + wins);
-    // guessesRemainingText.innerHTML = ("Guesses Remaining: " + guessesRemaining);
 
 
 
